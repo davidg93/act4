@@ -57,7 +57,9 @@ def move():
 
     for target in targets:
         if not inside(target):
-            return
+            "Al hacer quitar el return, hace que el juego no termine"
+            "Hace que se limpien los objetivos y el juego continúe"
+            targets.clear() 
 
     ontimer(move, 50)
 
